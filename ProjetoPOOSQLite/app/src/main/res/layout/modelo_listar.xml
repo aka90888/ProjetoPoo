@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoNome" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoMatricula" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoCurso" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoDisc1" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoFalta1" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoNota1" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoDisc2" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoFalta2" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlunoNota2" />
+</LinearLayout>
