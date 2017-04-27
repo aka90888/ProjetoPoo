@@ -35,7 +35,13 @@ public class TelaPrincipal extends AppCompatActivity {
 
                 usuario = txtUsuario.getText().toString();
                 senha = txtSenha.getText().toString();
-                Cursor aux = control.logarAluno(usuario, senha);
+                Cursor aux = null;
+                try {
+                    aux = control.logarAluno(usuario, senha);
+                }
+                catch (Exception e) {
+                    Toast.makeText(TelaPrincipal.this, "Falha ao logar", Toast.LENGTH_SHORT).show();
+                }
 
                 if(aux != null) {
                     Bundle param = new Bundle();

@@ -34,7 +34,13 @@ public class TelaProfessor extends AppCompatActivity {
 
                 usuario = txtUsuario.getText().toString();
                 senha = txtSenha.getText().toString();
-                Cursor aux = control.logarProf(usuario, senha);
+                Cursor aux = null;
+                try {
+                    aux = control.logarProf(usuario, senha);
+                }
+                catch (Exception e) {
+                    Toast.makeText(TelaProfessor.this, "Falha ao logar", Toast.LENGTH_SHORT).show();
+                }
 
                 if(aux != null) {
                     Bundle param = new Bundle();
