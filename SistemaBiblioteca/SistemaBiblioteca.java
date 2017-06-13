@@ -33,7 +33,6 @@ public class SistemaBiblioteca {
                         if(cod == livros[i].getCodigo()) {
                             if(livros[i].getReservado() == false) {
                                 livros[i].reservar();
-                                System.out.println("Reservado com sucesso!");
                             }
                             else {
                                 System.out.println("Livro indisponivel!");
@@ -48,7 +47,6 @@ public class SistemaBiblioteca {
                         if(cod == livros[i].getCodigo()) {
                             if(livros[i].getReservado() == true) {
                                 livros[i].devolver();
-                                System.out.println("Devolvido com sucesso!");
                             }
                             else {
                                 System.out.println("Livro ainda nao reservado!");
